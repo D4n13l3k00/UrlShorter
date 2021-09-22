@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Url shorter</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+        <style>
+            .content {
+                box-shadow: 5px 5px;
+                width: fit-content;
+                border-width: 1px;
+                border-style: solid;
+                padding: 0 6em 0 6em;
+                margin-bottom: 1em;
+            }
+            body {
+                color: whitesmoke;
+                background-color: #111;
+                margin: 1em;
+            }
+            a {
+                color: #00ffff;
+            }
+            a:hover {
+                color: #008cff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            UrlShorter
+        </div>
+        <div class="content">
+            <a href="{{ link }}">{{ link }}</a>
+        </div>
+    </body>
+</html>
