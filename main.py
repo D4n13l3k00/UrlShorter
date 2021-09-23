@@ -33,7 +33,7 @@ async def create(rq: Request, link: str):
             break
         n += 1
     await db.set(shrt, link)
-    return templates.TemplateResponse("success.html", {"request":rq, "link":f"http://{rq.url.hostname}{':'+ str(rq.base_url.port) if rq.base_url.port != 80 else ''}/{shrt}"})
+    return templates.TemplateResponse("success.html", {"request":rq, "link":f"http://{rq.url.hostname}{':'+ str(rq.base_url.port) if rq.base_url.port else ''}/{shrt}"})
 
 
 @app.get('/{shrt}', include_in_schema=False)
