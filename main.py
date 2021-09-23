@@ -1,13 +1,13 @@
 import random
 import re
 import string
-
+import os
 import aioredis
 from fastapi import FastAPI, Request
 from fastapi.responses import *
 from fastapi.templating import Jinja2Templates
 
-db = aioredis.from_url("redis://localhost/1", decode_responses=True)
+db = aioredis.from_url(os.getenv("REDIS_URL") or "redis://localhost/1", decode_responses=True)
 
 templates = Jinja2Templates(directory="templates")
 is_url = re.compile(
