@@ -10,6 +10,7 @@ Default: redis://localhost/1
 
 ### Docker:
 Just build with `docker built -t some-shorter .`
+
 Create container and run: `docker run --name shorter -it -p 80:8888 -e REDIS_URL=redis://192.168.1.2/1 some-shorter`
 
 ### License: [AGPL-v3](/LICENSE)
