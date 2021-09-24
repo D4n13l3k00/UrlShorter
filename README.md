@@ -1,7 +1,7 @@
 # UrlShorter
 
 ### UrlShorter based on FastAPI and Redis-DB
-
+https://s.d4n13l3k00.ru
 ### ENV_VARS:
 ```
 REDIS_URL - redis db url. Example: redis://127.0.0.1/3
